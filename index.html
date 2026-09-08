@@ -3,125 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="HM Clothing Brand — winter running, T-shirts, hoodies, jackets and tracksuits with 30+ color choices and WhatsApp ordering.">
-<title>HM Clothing Brand | Winter Collection</title>
-<link rel="stylesheet" href="style.css">
+<title>HM Clothing — 50 Product Collection</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#070b0d;color:#fff;font-family:Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:10;background:rgba(5,8,10,.96);border-bottom:1px solid #273038;padding:16px 5%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:28px;font-weight:900;letter-spacing:2px}.logo small{display:block;font-size:8px;letter-spacing:4px;text-align:center}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{padding:55px 5% 35px;background:linear-gradient(120deg,#0c1419,#071014)}
+.hero h1{font-size:clamp(36px,7vw,70px);margin:0 0 10px}.hero p{color:#b9c3ca;max-width:650px;line-height:1.6}
+.container{width:min(1400px,92%);margin:auto}
+.catalog{width:100%;display:block;border:1px solid #27343c;border-radius:16px;margin:25px 0;box-shadow:0 15px 45px #000}
+.note{background:#0d151a;border:1px solid #27343c;padding:18px;border-radius:12px;color:#cbd4d9}
+footer{text-align:center;padding:35px;color:#88939a;border-top:1px solid #273038;margin-top:40px}
+@media(max-width:700px){nav{display:none}.hero{padding-top:35px}}
+</style>
 </head>
 <body>
-<header class="header">
-  <a class="brand" href="#home"><img src="logo.png" alt="HM Clothing Brand"></a>
-  <nav id="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#colors">30+ Colors</a><a href="#custom">Customize</a><a href="#about">About</a></nav>
-  <a class="wa-top" href="https://wa.me/923024835443" target="_blank">WHATSAPP</a>
-  <button class="menu" aria-label="Menu">☰</button>
+<header>
+  <div class="logo">HM<small>CLOTHING</small></div>
+  <nav><a href="#collection">Collection</a><a href="#contact">Contact</a></nav>
 </header>
 
-<section id="home" class="hero">
-  <div class="hero-copy">
-    <span class="eyebrow">WINTER RUNNING COLLECTION</span>
-    <h1>STAY WARM.<br><em>KEEP RUNNING.</em></h1>
-    <p>Premium winter essentials for Pakistan — thermal layers, fleece hoodies, jackets, track pants and more.</p>
-    <div class="actions"><a class="btn primary" href="#shop">SHOP WINTER GEAR →</a><a class="btn ghost" href="#colors">CHOOSE COLOR</a></div>
-    <div class="hero-points"><span>❄ Thermal Warmth</span><span>◈ Lightweight</span><span>✓ Performance Ready</span></div>
-  </div>
-  <div class="hero-visual">
-    <div class="mountain"></div><div class="runner-silhouette"><span>HM</span></div>
-    <div class="hero-card">HM<br><small>WINTER 2026</small></div>
+<section class="hero">
+  <div class="container">
+    <p>HM CLOTHING • WINTER 2026</p>
+    <h1>50 PRODUCT COLLECTION</h1>
+    <p>Premium T-Shirts, Hoodies, Jackets, Tracksuits and Winter Running Gear. Each category contains 10 product designs with multiple color options.</p>
   </div>
 </section>
 
-<section class="category-strip">
-  <a href="#shop">👕<b>T-SHIRTS</b></a><a href="#shop">🧥<b>HOODIES</b></a><a href="#shop">🥼<b>JACKETS</b></a><a href="#shop">👖<b>TRACKSUITS</b></a><a href="#shop">🏃<b>RUNNING GEAR</b></a>
-</section>
+<main class="container" id="collection">
+  <div class="note">
+    <strong>50 HM products</strong> — 10 T-Shirts • 10 Hoodies • 10 Jackets • 10 Tracksuits • 10 Winter Running items.
+    <br>Product numbers and colors are shown directly on the catalog.
+  </div>
+  <img class="catalog" src="hm-50-product-catalog.png" alt="HM Clothing 50 product catalog">
+</main>
 
-<section id="shop" class="section">
-  <div class="section-head"><div><span class="eyebrow">FEATURED</span><h2>Winter Running Collection</h2></div><span class="muted">NEW DROPS • LIMITED WINTER STOCK</span></div>
-  <div class="products">
-<article class="product-card">
-  <div class="badge">NEW</div><img src="thermal-jacket.png" alt="HM Thermal Running Jacket">
-  <div class="pbody"><h3>Thermal Running Jacket</h3><p>Windproof • Warm • Lightweight</p><b>Rs. 5,999</b><button onclick="pickProduct('Thermal Running Jacket')">ORDER</button></div>
-</article>
-<article class="product-card">
-  <div class="badge hot">HOT</div><img src="thermal-base.png" alt="HM Thermal Base Layer">
-  <div class="pbody"><h3>Thermal Base Layer</h3><p>Stretch • Sweat Wicking • Warm</p><b>Rs. 2,999</b><button onclick="pickProduct('Thermal Base Layer')">ORDER</button></div>
-</article>
-<article class="product-card">
-  <div class="badge">NEW</div><img src="running-pants.png" alt="HM Running Track Pants">
-  <div class="pbody"><h3>Running Track Pants</h3><p>Flexible • Tapered • Winter Ready</p><b>Rs. 3,499</b><button onclick="pickProduct('Running Track Pants')">ORDER</button></div>
-</article>
-<article class="product-card">
-  <div class="badge hot">HOT</div><img src="fleece-hoodie.png" alt="HM Fleece Hoodie">
-  <div class="pbody"><h3>Fleece Hoodie</h3><p>Soft Fleece • Heavy Warmth</p><b>Rs. 4,499</b><button onclick="pickProduct('Fleece Hoodie')">ORDER</button></div>
-</article>
-<article class="product-card">
-  <div class="badge">NEW</div><img src="winter-beanie.png" alt="HM Winter Beanie">
-  <div class="pbody"><h3>Winter Beanie</h3><p>Warm Knit • Everyday Fit</p><b>Rs. 1,499</b><button onclick="pickProduct('Winter Beanie')">ORDER</button></div>
-</article>
-</div>
-</section>
-
-<section id="colors" class="section colors-section">
-  <div class="section-head"><span class="eyebrow">COLOR STUDIO</span><h2>Pick from 30+ colors.</h2><p>Choose a color before placing your order. Your selected color will be sent to WhatsApp.</p></div>
-  <div class="selected-color"><span id="selectedDot"></span><strong id="selectedColor">Jet Black</strong></div>
-  <div class="swatches"><button type="button" class="swatch" style="--swatch:#0A0A0B;" data-color="Jet Black" title="Jet Black"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#F4F1EA;" data-color="Off White" title="Off White"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#25272B;" data-color="Charcoal" title="Charcoal"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#3A3D42;" data-color="Graphite" title="Graphite"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#70757B;" data-color="Ash Grey" title="Ash Grey"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#BFC5CA;" data-color="Silver" title="Silver"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#8A8277;" data-color="Stone" title="Stone"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#C9B79C;" data-color="Sand" title="Sand"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#B88A5A;" data-color="Camel" title="Camel"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#4A2E22;" data-color="Chocolate" title="Chocolate"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#6E1F2B;" data-color="Burgundy" title="Burgundy"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#4C121B;" data-color="Maroon" title="Maroon"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#101D3A;" data-color="Navy" title="Navy"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#174A9E;" data-color="Royal Blue" title="Royal Blue"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#A8D7F0;" data-color="Ice Blue" title="Ice Blue"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#0D6663;" data-color="Teal" title="Teal"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#173D2B;" data-color="Forest Green" title="Forest Green"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#59613B;" data-color="Olive" title="Olive"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#94A88B;" data-color="Sage" title="Sage"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#A99B72;" data-color="Khaki" title="Khaki"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#A84A2A;" data-color="Rust" title="Rust"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#E56B2F;" data-color="Orange" title="Orange"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#C69A25;" data-color="Mustard" title="Mustard"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#E8D8B5;" data-color="Cream" title="Cream"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#9B8AB8;" data-color="Lavender" title="Lavender"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#56304F;" data-color="Plum" title="Plum"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#C58F98;" data-color="Dusty Pink" title="Dusty Pink"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#B51E2A;" data-color="Red" title="Red"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#58D68D;" data-color="Electric Green" title="Electric Green"><span></span></button>
-<button type="button" class="swatch" style="--swatch:#D8F23A;" data-color="Neon Yellow" title="Neon Yellow"><span></span></button></div>
-</section>
-
-<section id="custom" class="custom section">
-  <div><span class="eyebrow">CUSTOM STUDIO</span><h2>MAKE IT<br><em>YOURS.</em></h2><p>Choose your product, color and size, then add your own text, logo or design instructions.</p><a class="btn primary" href="#order">START CUSTOMIZING →</a></div>
-  <div class="custom-panel"><div class="custom-shirt"><span>HM</span></div><div><b>PLAIN OR CUSTOM</b><p>Chest print • Back print • Name • Logo • Custom idea</p></div></div>
-</section>
-
-<section id="order" class="section order-section">
-  <div class="section-head"><span class="eyebrow">ORDER NOW</span><h2>Send your order to WhatsApp.</h2><p>Fill the details and WhatsApp will open with the complete order message.</p></div>
-  <form id="orderForm" class="order-form">
-    <div class="field"><label>PRODUCT</label><select id="product"><option>T-Shirt</option><option>Hoodie</option><option>Jacket</option><option>Tracksuit</option><option>Thermal Running Jacket</option><option>Thermal Base Layer</option><option>Running Track Pants</option><option>Fleece Hoodie</option><option>Winter Beanie</option></select></div>
-    <div class="field"><label>TYPE</label><select id="type"><option>Plain</option><option>Customized</option></select></div>
-    <div class="field"><label>COLOR</label><input id="color" value="Jet Black" readonly></div>
-    <div class="field"><label>SIZE</label><select id="size"><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>3XL</option></select></div>
-    <div class="field"><label>QUANTITY</label><input id="qty" type="number" min="1" value="1"></div>
-    <div class="field"><label>YOUR NAME</label><input id="name" required placeholder="Your name"></div>
-    <div class="field"><label>PHONE</label><input id="phone" required placeholder="03XXXXXXXXX"></div>
-    <div class="field full"><label>CUSTOMIZATION / DESIGN</label><textarea id="customization" placeholder="Example: White HM logo on chest, name on back..."></textarea></div>
-    <div class="field full"><label>NOTES</label><textarea id="notes" placeholder="Any extra instructions..."></textarea></div>
-    <button class="btn primary full" type="submit">ORDER ON WHATSAPP ↗</button>
-  </form>
-</section>
-
-<section id="about" class="about section">
-  <div><span class="eyebrow">ABOUT HM</span><h2>More than just clothing.</h2></div>
-  <p>HM Clothing Brand is built around clean style, practical comfort and customization. This winter collection focuses on warm running and everyday essentials.</p>
-</section>
-
-<footer><div><img src="logo.png" alt="HM"><p>More Than Just Clothing.<br>It's a Lifestyle.</p></div><div><b>SHOP</b><a href="#shop">Winter Gear</a><a href="#colors">30+ Colors</a><a href="#custom">Customize</a></div><div><b>ORDER</b><a href="https://wa.me/923024835443" target="_blank">WhatsApp: 03024835443</a><a href="#order">Order Form</a></div><div class="copyright">© 2026 HM Clothing Brand. All rights reserved.</div></footer>
-
-<script src="script.js"></script>
+<footer id="contact">
+  <strong>HM CLOTHING</strong><br><br>
+  Built for Runners • Designed for You<br>
+  WhatsApp Orders: +92 302 4835443
+</footer>
 </body>
 </html>
