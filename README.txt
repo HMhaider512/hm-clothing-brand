@@ -1,23 +1,15 @@
-HM Clothing Brand — Winter Update
+HM CLOTHING BRAND — FREE WEBSITE
+
 Files:
 - index.html
 - style.css
 - script.js
 - logo.png
-- thermal-jacket.png
-- thermal-base.png
-- running-pants.png
-- fleece-hoodie.png
-- winter-beanie.png
 
-Features:
-- Winter Running Collection
-- 30 color choices
-- Product cards
-- Customization/order form
-- WhatsApp ordering to 03024835443
-- Mobile responsive design
+HOW TO USE:
+1. Upload all four files to a free static host such as GitHub Pages.
+2. Make sure the file names stay exactly the same.
+3. The ORDER NOW form opens WhatsApp for 03024835443.
+4. Replace any future product images/prices in index.html if needed.
 
-GitHub Pages:
-Upload/replace ALL files in your existing hm-clothing-brand repository on main branch.
-GitHub Pages will publish changes automatically when the main branch is updated.
+No server/database is required for this version.
